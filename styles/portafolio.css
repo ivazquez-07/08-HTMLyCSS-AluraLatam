@@ -1,0 +1,181 @@
+/* 2025-02-25_IV: Esta es la hoja de estilos que sirve para darle belleza a nuestra página web Portafolio */
+
+/* Acá se definen los tipos de fuentes cuando las importamos por ejemplo de Google Fonts */
+/* @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Definición de variables en CSS */
+:root {
+  /* Colores Originales */
+  /* --color-primario: #000000;
+  --color-secundario: #F6F6F6;
+  --color-terciario: #22D4FD;
+  --color-hover: #272727;
+  --color-hover-link: #0000FF; */
+  /* Colores custom */
+  --color-primario: #021526;
+  --color-secundario: #E2E2B6;
+  --color-terciario: #6EACDA;
+  --color-hover: #03346E;
+  --color-hover-link: #0000FF;
+  /* Fuentes */
+  --fuente-montserrat: "Montserrat", sans-serif;
+  --fuente-krona:  "Krona One", sans-serif;
+}
+
+/* Reset de estilos previo a usar mis propios estilos */
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  list-style-type: none;
+  background-color: var(--color-primario);
+  color: var(--color-secundario);
+  font-size: medium;
+  height: 100vh; /* Lo comentamos porque ya no ocupamos el 100% de la pantalla con el body sino que tenemos otros elementos ahora */
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: var(--color-primario);
+  padding: 1% 0 0 18%; /* top right botton left */
+}
+
+.header__menu {
+  display: flex;
+  gap: 80px;
+  padding: 8px 24px;
+  margin: 8px 16px;
+  align-content: flex-start;
+}
+
+.header__menu__link {
+  font-family: var(--fuente-montserrat);
+  font-weight: 600;
+  /* font-size: 24px; Lo llevamos a rem (tamaño relativo al font-size del root element).
+  Si un párrafo tiene font-size: 18px, conviértelo a 1.125rem (18 / 16 = 1.125)
+  */
+  font-size: 1.5rem; 
+  color: var(--color-terciario);
+  text-decoration: none;
+}
+
+.header__menu__link:hover {
+  background-color: var(--color-hover);
+  /* padding: 5%; */
+  cursor: pointer;
+  border: 2px solid var(--color-hover-link);
+}
+
+/* Uso de clases */
+/* Uso de containers y sections */
+.presentacion {
+  display: flex;  /* or inline-flex */
+  align-items: center;
+  padding: 5% 20%;
+  justify-content: space-between;
+  gap: 82px;
+}
+
+.presentacion__contenido {
+  /* width: 615px; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.h1__titulo__blog{
+  color: #FF5733; /* Elige un color vibrante */
+  }
+
+.h1__titulo__destacado {
+  /* color: #22D4FD; */
+  color: #007BFF; /* Elige un color llamativo */
+}
+
+.presentacion__contenido__titulo {
+  font-family: var(--fuente-krona);
+  /* font-size: 36px; */
+  font-size: 2.25rem;
+}
+
+.presentacion__contenido__texto {
+  font-family: var(--fuente-montserrat);
+  font-weight: 400;
+  font-size: 1.5rem; 
+}
+
+.presentacion__contenido__texto__largo {
+  font-family: var(--fuente-montserrat);
+  font-weight: 400;
+  font-size: 1.25rem; 
+}
+.presentacion__contenido__texto a{
+  text-decoration: none;
+  color: var(--color-terciario);
+}
+
+.presentacion__enlaces {
+  display: flex;  /* or inline-flex */
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  /* width: 615px; */
+  /* width: 50%; */
+}
+
+.presentacion__enlaces__subtitulo {
+  font-family: var(--fuente-krona);
+  font-size: 1.5rem;
+  font-weight: 400; 
+}
+
+.presentacion__enlaces__link {
+  width: 378px;
+  /* height: 79px; */
+  /* background-color: var(--color-terciario); */
+  text-align: center;
+  padding: 21.5px 0;   /* el primer valor es el vertical y el segundo el horizontal, como no queremos agregar más, solo ponemos 0*/
+  /* Otras propiedades existentes permanecen sin cambios */
+  border: 2px solid var(--color-terciario);
+  border-radius: 8px;
+  font-family: var(--fuente-montserrat);
+  font-size: 1.5rem; 
+  font-weight: 600; /* semi-bold */
+  text-decoration: none;
+  color: var(--color-secundario);
+  /*Al agregar los íconos como img dentro de las anclas "a", hemos creado un container, entonces podemos usar flex */
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.presentacion__enlaces__link:hover {
+  background-color: var(--color-hover);
+  /* padding: 5%; */
+  cursor: pointer;
+  border: 2px solid var(--color-hover-link);
+}
+
+.presentacion__imagen {
+  width: 50%;
+}
+
+.footer {
+  background-color: var(--color-terciario);
+  padding: 20px;
+  color: black;
+  text-align: center;
+  font-family: var(--fuente-montserrat);
+  font-size: 1rem; 
+  font-weight: 600; /* semi-bold */
+}
+
