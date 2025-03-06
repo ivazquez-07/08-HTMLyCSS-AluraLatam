@@ -10,6 +10,7 @@
   <li>Publica tu proyecto finalizado en la web y muéstralo a todo el mundo</li>
 </ul>
 
+<h2>Repositorio sincronizado en GitHub</h2>
 <p>
 Quick setup — if you’ve done this kind of thing before
 or	
