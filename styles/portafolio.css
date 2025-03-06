@@ -42,6 +42,7 @@ body {
   box-sizing: border-box;
 }
 
+/* Uso de clases */
 .header {
   background-color: var(--color-primario);
   padding: 1% 0 0 18%; /* top right botton left */
@@ -73,7 +74,15 @@ body {
   border: 2px solid var(--color-hover-link);
 }
 
-/* Uso de clases */
+.h1__titulo__blog{
+  color: #FF5733; /* Elige un color vibrante */
+  }
+
+.h1__titulo__destacado {
+  /* color: #22D4FD; */
+  color: #007BFF; /* Elige un color llamativo */
+}
+
 /* Uso de containers y sections */
 .presentacion {
   display: flex;  /* or inline-flex */
@@ -89,15 +98,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.h1__titulo__blog{
-  color: #FF5733; /* Elige un color vibrante */
-  }
-
-.h1__titulo__destacado {
-  /* color: #22D4FD; */
-  color: #007BFF; /* Elige un color llamativo */
 }
 
 .presentacion__contenido__titulo {
@@ -139,7 +139,8 @@ body {
 }
 
 .presentacion__enlaces__link {
-  width: 378px;
+  /* width: 378px; */
+  width: 50%;
   /* height: 79px; */
   /* background-color: var(--color-terciario); */
   text-align: center;
@@ -179,3 +180,54 @@ body {
   font-weight: 600; /* semi-bold */
 }
 
+/* Adaptación responsiva para móviles 
+Los tipos de medios definen la amplia categoría de dispositivos para los que se aplica la consulta de medios: all, print, screen.
+El tipo es opcional (se asume que es all) excepto cuando se usan los operadores lógicos not o only.
+*/
+/* @media only screen and ( max-width: 992px) { */
+@media (max-width: 992px) {
+  .header {
+    padding: 2%; /* top right botton left */
+  }
+
+  .header__menu {
+    justify-content: center;
+  }
+
+  .presentacion {
+    flex-direction: column-reverse;
+    padding: 5%;
+  }
+
+  .presentacion__imagen {
+    height: 50%;
+  }
+
+  .presentacion__contenido {
+    width: auto;
+  }
+
+}
+/* Extra small devices (phones, 600px and down) */
+/* @media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
+
+/* The web page will have a lightblue background if the orientation is in landscape mode: */
+/* 
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+} 
+*/

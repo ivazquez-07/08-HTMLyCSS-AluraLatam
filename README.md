@@ -9,3 +9,26 @@
   <li>Entiende la diferencia entre medidas absolutas y relativas</li>
   <li>Publica tu proyecto finalizado en la web y muéstralo a todo el mundo</li>
 </ul>
+
+<p>
+Quick setup — if you’ve done this kind of thing before
+or	
+https://github.com/ivazquez-07/08-HTMLyCSS-AluraLatam.git
+Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore.
+</p>
+<p>
+…or create a new repository on the command line
+echo "# 08-HTMLyCSS-AluraLatam" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ivazquez-07/08-HTMLyCSS-AluraLatam.git
+git push -u origin main
+</p>
+<p>
+…or push an existing repository from the command line
+git remote add origin https://github.com/ivazquez-07/08-HTMLyCSS-AluraLatam.git
+git branch -M main
+git push -u origin main
+</p>
